@@ -77,3 +77,9 @@ else:
 2. 使用int()进行强制类型转换
 3. 奇数不能被2除尽；偶数可以。（求余运算。）
 '''
+
+# condition_a = 1
+# condition_b = 2
+
+# if condition_a == condition_b:
+    #if后边的语句被执行的根本原因是if的“条件判断”结果为True。
