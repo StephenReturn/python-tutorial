@@ -40,17 +40,62 @@ print(len(names))
 #2个列表的拼接：+号
 a = [1,2,3]
 b = [4,5,6]
-c = a + b
-print(c)
+# c = a + b
+# print(c)
+
+#典型错误：数组越界
+# print(a[2])
+
+#字符串转列表:核心是拆分（split()）
+# name_str = "Alice Alice Bob Cathy Alice"
+# name_list = name_str.split()#"点语法”。
+# print(name_list)
+
+# name_str2 = "Alice,Bob,Cathy"
+# name_list2 = name_str2.split(',')
+# print(name_list2)
+#列表转字符串:语法是"分隔符.join(列表）"
+# name_list_to_str = ' '.join(name_list)#name_list = ['Alice', 'Bob', 'Cathy']
+# print(name_list_to_str)
+
 
 #统计某个元素在列表中出现的次数：list.count()
-#list.remove()
-# list.insert(index, obj)
-# list.pop(index=-1)
-# list.reverse()
-# list.sort()
-#list.cmp()
+# print(name_list2.count("Alice"))
+# #列表的长度：
+# print(len(name_list))
+
+
+
+names = ["Alice", "Bob", "Cynthia", "Dell"]
+#list.remove():去掉列表中的某个元素
+# names.remove("Bob")
+# print(names)
+
+
+# list.insert(index, obj):在指定位置插入元素
+# names.insert(0,"Stephen")
+# print(names)
+
+# list.pop(index=-1):删除(默认从最后一个元素开始往前删除）
+# names.pop()
+# names.pop()
+# print(names)
+
+
+# list.reverse()：列表反转——排列顺序完全颠倒
+# names.reverse()
+# print(names)
+
+# list.sort():排序
+nums = [1,5,3,6,4,2,10,18]
+nums.sort(reverse=True)
+print(nums)
+
 #对数字列表进行统计计算（max，min，sum）
+print(max(nums))
+print(min(nums))
+print(sum(nums))
+
 #列表表达式（含平方操作）
 #集合的概念
 #列表切片
@@ -61,12 +106,11 @@ print(c)
 最后3个元素
 切片的遍历
 '''
+# ?names = ["Alice", "Bob", "Cynthia", "Dell"]
+print(names[-3:])
 #列表的操作：添加、删除
 #列表的复制（重要概念：值拷贝、引用拷贝） -- 引申：print(id(var))打印内存地址
 #元组：不可变的列表
 #元组用圆括号表示
 #元组的遍历
 #元组的重新赋值（整体改变）
-
-
-
